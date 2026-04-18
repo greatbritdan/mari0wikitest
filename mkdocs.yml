@@ -1,4 +1,50 @@
-site_name: Mari0 Docs Test Site.
-site_url: https://greatbritdan.github.io/mari0wiki
+site_name: Mari0 Docs (Dev)
+site_url: https://greatbritdan.github.io/mari0wikitest
+nav:
+- Home: index.md
+- Mappacks: mappacks.md
+- Tags: tags.md
+
 theme:
   name: material
+  logo: assets/icon.png
+  language: en
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  icon:
+    tag:
+      mappack: material/tag
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+extra:
+  tags:
+    Mappack: mappack
+
+plugins:
+  - search
+  - tags
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
