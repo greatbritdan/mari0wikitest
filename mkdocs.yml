@@ -1,1 +1,4 @@
-site_name: My Docs
+site_name: Mari0 Docs Test Site.
+site_url: https://greatbritdan.github.io/mari0wiki
+theme:
+  name: material
